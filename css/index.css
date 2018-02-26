@@ -4,5 +4,5 @@
 	position: relative;
 	margin: 20px auto;
 	overflow: hidden;
-	background-color: black;
+	border: 1px solid black;
 }
