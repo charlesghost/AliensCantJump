@@ -13,9 +13,13 @@
 	margin-top: 420px;
 	margin-left: 150px;
 	position: absolute;
-	-webkit-animation:bounce 0.5s infinite;
-	
+
+
 }
+
+-webkit-animation:bounce 0.5s infinite;
+
+
 
 @-webkit-keyframes bounce {
   0%       { bottom:5px; }
