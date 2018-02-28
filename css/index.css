@@ -1,5 +1,5 @@
 #wrapper {
-	height: 500px;
+	height: 700px;
 	width: 400px;
 	position: relative;
 	margin: 20px auto;
@@ -10,8 +10,7 @@
 #player {
 	height: 50px;
 	width: 50px;
-	margin-top: 420px;
-	margin-left: 150px;
+	background-color: black;
 	position: absolute;
 
 
@@ -19,10 +18,6 @@
 
 -webkit-animation:bounce 0.5s infinite;
 
-#top {
-	position: relative;
-	margin-top: -350px;
-}
 
 @-webkit-keyframes bounce {
   0%       { bottom:5px; }
@@ -34,26 +29,55 @@
 
 
 #platform1 {
-	margin-top: -300px;
+	height: 15px;
+	width:100px;
+	background-color: blue;
+	position: absolute;
+	bottom:50px;
+	left:50px;
 }
 
 #platform2 {
-	margin-top: -170px;
-	margin-left: 40px;
+    height: 15px;
+	width:100px;
+	background-color: blue;
+	position: absolute;
+	bottom: 200px;
+	left: 190px;
 }
 
 #platform3 {
-	margin-top: 400px;
+    height: 15px;
+	width:100px;
+	background-color: blue;
+	position: absolute;
+	bottom: 300px;
+	left: 75px;
 }
 
 #platform4 {
-  margin-top:  60px;
+  height: 15px;
+  width:100px;
+  background-color: blue;
+  position: absolute;
+  bottom:400px;
+  left:195px;
 }
 
 #platform5 {
-	margin-top:350px;
+    height: 15px;
+	width:100px;
+	background-color: blue;
+	position: absolute;
+	bottom:450px;
+    left:70px;
 }
 
 #platform6 {
-	margin-top:150px;
+	height: 15px;
+	width:100px;
+	background-color: blue;
+	position: absolute;
+	bottom:550px;
+    left:125px;
 }
