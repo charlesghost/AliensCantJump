@@ -4,17 +4,28 @@
 
 var gravity = 1;
 var maxheight;
-var timer;
-var jump = 32;
 var velocity = 0;
-var SCREEN_WIDTH = 400;
-var SCREEN_HEIGHT = 500;
+
+var Player = document.getElementById("player");
+var Platform = document.getElementById("platform");
+
+
+/*
+var first = $(Player).offset().top;
+var second = $(wrapper).offset().top;
+
+var distance = parseInt(first) - parseInt(second);
+
+if (distance > $('#player')){
+	alert("works");
+}
+*/
+
 
 maxheight = Math.round($("#wrapper").height() - $("#player").height());
 
 timer = setInterval(update, 1000/60);
 
-var Player = document.getElementById("player");
 
 
 // Keypad 
@@ -44,26 +55,29 @@ $(document).keydown(function(e) {
     }
 })
 
+if ($("#player").offset() == "500"){
+
+	alert("Game Over!")
+}
+
 function update() {
 	if (velocity === 0 && $("#player").position().top === maxheight) {
 	} else if (velocity > 0 && $("#player").position().top >= maxheight) {
-		$("#player").css("top", maxheight + "px");
+		$("#player").css("bottom", maxheight + "px");
 		velocity = 0;
 	} else {
 		velocity += gravity;
 		var newPos = $("#player").position().top + velocity + "px";
 		$("#player").css("top", newPos);
-		velocity = 3;
-
+		velocity = 1;
+		
 	}
 };
 
-function collision(){
-
-	
 
 
-}
+
+
 
 
 
@@ -73,7 +87,7 @@ var game = function(_gameDiv) {
 	var that = this;
 	
 	var SCREEN_WIDTH = 400;
-    var SCREEN_HEIGHT = 500;
+    var SCREEN_HEIGHT = 700;
 
 	this.width = SCREEN_WIDTH;
 	this.height = SCREEN_HEIGHT;
@@ -99,6 +113,9 @@ var game = function(_gameDiv) {
         
 
         gamePlatform.appendChild(gameDiv);
+
+        
+        
 
 
 }
