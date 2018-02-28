@@ -2,6 +2,8 @@
 // Create Player + Controls
 // Create multiple platorms with possible collision
 
+// Variables 
+
 var gravity = 1;
 var maxheight;
 var velocity = 0;
@@ -10,22 +12,11 @@ var Player = document.getElementById("player");
 var Platform = document.getElementById("platform");
 
 
-/*
-var first = $(Player).offset().top;
-var second = $(wrapper).offset().top;
-
-var distance = parseInt(first) - parseInt(second);
-
-if (distance > $('#player')){
-	alert("works");
-}
-*/
-
+// Gravity variables 
 
 maxheight = Math.round($("#wrapper").height() - $("#player").height());
 
 timer = setInterval(update, 1000/60);
-
 
 
 // Keypad 
@@ -55,10 +46,14 @@ $(document).keydown(function(e) {
     }
 })
 
+// Game conditions
+
 if ($("#player").offset() == "500"){
 
 	alert("Game Over!")
 }
+
+// Player Gravity
 
 function update() {
 	if (velocity === 0 && $("#player").position().top === maxheight) {
@@ -75,12 +70,7 @@ function update() {
 };
 
 
-
-
-
-
-
-
+// Game Screen
 
 var game = function(_gameDiv) {
 
