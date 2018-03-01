@@ -25,16 +25,16 @@ body {
 	width: 50px;
 	position: absolute;
 	background-image: url("../images/spacealien.png");
-	bottom:50px;
-	left:50px;
+	bottom:5px;
+	left:135px;
 }
 
 #platform1 {
 	height: 15px;
 	width:100px;
 	position: absolute;
-	bottom:50px;
-	left:50px;
+	bottom:5px;
+	left:136px;
 	background-image: url("../images/steel.jpeg");
 }
 
@@ -42,8 +42,8 @@ body {
     height: 15px;
 	width:100px;
 	position: absolute;
-	bottom: 200px;
-	left: 190px;
+	bottom: 111px;
+	left: 255px;
 	background-image: url("../images/steel.jpeg");
 }
 
@@ -51,8 +51,8 @@ body {
     height: 15px;
 	width:100px;
 	position: absolute;
-	bottom: 300px;
-	left: 75px;
+	bottom: 144px;
+	left: 35px;
 	background-image: url("../images/steel.jpeg");
 }
 
@@ -60,8 +60,8 @@ body {
   height: 15px;
   width:100px;
   position: absolute;
-  bottom:400px;
-  left:195px;
+  bottom:363px;
+  left:171px;
   background-image: url("../images/steel.jpeg");
 }
 
@@ -69,8 +69,8 @@ body {
     height: 15px;
 	width:100px;
 	position: absolute;
-	bottom:450px;
-    left:70px;
+	bottom:545px;
+    left:189px;
     background-image: url("../images/steel.jpeg");
 }
 
@@ -78,8 +78,8 @@ body {
 	height: 15px;
 	width:100px;
 	position: absolute;
-	bottom:550px;
-    left:125px;
+	bottom:448px;
+    left:269px;
     background-image: url("../images/steel.jpeg");
 }
 
@@ -88,6 +88,8 @@ body {
 	width:100px;
 	position: absolute;
 	background-image: url("../images/steel.jpeg");
+	bottom:245px;
+	left:222px;
 }
 
 #platform8 {
@@ -95,6 +97,8 @@ body {
 	width:100px;
 	position: absolute;
 	background-image: url("../images/steel.jpeg");
+	bottom: 299px;
+	left:10px;
 }
 
 #platform9 {
@@ -102,6 +106,8 @@ body {
 	width:100px;
 	position: absolute;
 	background-image: url("../images/steel.jpeg");
+	bottom:416px;
+	left:32px;
 }
 
 #platform10 {
@@ -109,6 +115,8 @@ body {
   width:100px;
   position: absolute;
   background-image: url("../images/steel.jpeg");
+  bottom: 504px;
+  left:42px;
 }
 
 #platform11 {
@@ -116,6 +124,8 @@ body {
 	width:100px;
 	position: absolute;
     background-image: url("../images/steel.jpeg");
+    bottom:644px;
+    left:243px;
 }
 
 #platform12 {
@@ -123,6 +133,8 @@ body {
 	width:100px;
 	position: absolute;
     background-image: url("../images/steel.jpeg");
+    bottom:592px;
+    left:41px;
 }
 #winnercoin {
 	height: 100px;
@@ -137,7 +149,40 @@ body {
 	width:100px;
 	background-image: url("../images/monster1.png");
 	position: absolute;
-	bottom: 200px;
+	bottom: 150px;
 	left: 350px;
+
+}
+
+#enemy2 {
+	height:100px;
+	width:100px;
+	background-image: url("../images/monster2.png");
+	position: absolute;
+	bottom: 492px;
+	left: 341px;
+	
+
+}
+
+#enemy3 {
+	height:100px;
+	width:100px;
+	background-image: url("../images/monster3.png");
+	position: absolute;
+	bottom: 323px;
+	left: -50px;
+	
+
+}
+
+#enemy4 {
+	height:100px;
+	width:100px;
+	background-image: url("../images/flyingdisk.png");
+	position: absolute;
+	bottom: 600px;
+	left: -28px;
+	
 
 }
