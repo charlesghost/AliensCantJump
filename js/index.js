@@ -13,7 +13,7 @@ var velocity = 0;
 var player = $("#player");
 var platform = $("#platform1");
 var winner = $("#player").collision('#platform6');
-var sound = $("#sound");
+
 
 var currentPos = $('#player').position().top;
 
@@ -23,6 +23,11 @@ maxheight = Math.round($("#wrapper").height() - $("#player").height());
 
 timer = setInterval(update, 1000/60);
 
+// Music for the game
+
+$(document).ready(function(){
+    $("#sound").get(0).play();
+});
 
 
 // Winning/Losing Conditions
