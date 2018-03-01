@@ -1,83 +1,143 @@
+body {
+	background-image: url("../images/ext.jpeg");
+	background-size:100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    margin: 0;
+    padding: 100px;
+}
+
 #wrapper {
-	height: 700px;
+	height: 800px;
 	width: 400px;
 	position: relative;
 	margin: 20px auto;
 	overflow: hidden;
 	border: 1px solid black;
+	background-image: url("../images/5014.png");
+
 }
 
 #player {
 	height: 50px;
 	width: 50px;
-	background-color: black;
 	position: absolute;
-
-
+	background-image: url("../images/spacealien.png");
+	bottom:50px;
+	left:50px;
 }
-
--webkit-animation:bounce 0.5s infinite;
-
-
-@-webkit-keyframes bounce {
-  0%       { bottom:5px; }
-  25%, 75% { bottom:15px; }
-  50%      { bottom:20px; }
-  100%     {bottom:0;}
-}
-
-
 
 #platform1 {
 	height: 15px;
 	width:100px;
-	background-color: blue;
 	position: absolute;
 	bottom:50px;
 	left:50px;
+	background-image: url("../images/steel.jpeg");
 }
 
 #platform2 {
     height: 15px;
 	width:100px;
-	background-color: blue;
 	position: absolute;
 	bottom: 200px;
 	left: 190px;
+	background-image: url("../images/steel.jpeg");
 }
 
 #platform3 {
     height: 15px;
 	width:100px;
-	background-color: blue;
 	position: absolute;
 	bottom: 300px;
 	left: 75px;
+	background-image: url("../images/steel.jpeg");
 }
 
 #platform4 {
   height: 15px;
   width:100px;
-  background-color: blue;
   position: absolute;
   bottom:400px;
   left:195px;
+  background-image: url("../images/steel.jpeg");
 }
 
 #platform5 {
     height: 15px;
 	width:100px;
-	background-color: blue;
 	position: absolute;
 	bottom:450px;
     left:70px;
+    background-image: url("../images/steel.jpeg");
 }
 
 #platform6 {
 	height: 15px;
 	width:100px;
-	background-color: blue;
 	position: absolute;
 	bottom:550px;
     left:125px;
+    background-image: url("../images/steel.jpeg");
+}
+
+#platform7 {
+	height: 15px;
+	width:100px;
+	position: absolute;
+	background-image: url("../images/steel.jpeg");
+}
+
+#platform8 {
+    height: 15px;
+	width:100px;
+	position: absolute;
+	background-image: url("../images/steel.jpeg");
+}
+
+#platform9 {
+    height: 15px;
+	width:100px;
+	position: absolute;
+	background-image: url("../images/steel.jpeg");
+}
+
+#platform10 {
+  height: 15px;
+  width:100px;
+  position: absolute;
+  background-image: url("../images/steel.jpeg");
+}
+
+#platform11 {
+    height: 15px;
+	width:100px;
+	position: absolute;
+    background-image: url("../images/steel.jpeg");
+}
+
+#platform12 {
+	height: 15px;
+	width:100px;
+	position: absolute;
+    background-image: url("../images/steel.jpeg");
+}
+#winnercoin {
+	height: 100px;
+	width: 100px;
+	background-image: url("../images/winnerwinner.png");
+	position: absolute;
+	left: 150px;
+}
+
+#enemy1 {
+	height:100px;
+	width:100px;
+	background-image: url("../images/monster1.png");
+	position: absolute;
+	bottom: 200px;
+	left: 350px;
+
 }
