@@ -1,19 +1,7 @@
 $(function(event){
 
 
-// Create Player + Controls
-// Create multiple platorms with possible collision
-
-// Variables 
-
-var gravity = 1;
-var maxheight;
-var velocity = 0;
-
-var player = $("#player");
-var platform = $("#platform1");
-var winner = $("#player").collision('#platform6');
-
+// Variable to find player's current location
 
 var currentPos = $('#player').position().top;
 
@@ -23,15 +11,17 @@ maxheight = Math.round($("#wrapper").height() - $("#player").height());
 
 timer = setInterval(update, 1000/60);
 
+var gravity = 1;
+var maxheight;
+var velocity = 0;
+
 // Music for the game
 
 $(document).ready(function(){
     $("#sound").get(0).play();
 });
 
-
-// Winning/Losing Conditions
-
+// Winning/Losing Intervals
 
 var interval = null;
 $(document).ready(function(){
@@ -43,16 +33,19 @@ $(document).ready(function(){
     interval2 = setInterval(Loser, 1000);
 })
 
+// Winning Conditions
 
 function Winner(){
    var winner = $("#player").collision('#winnercoin');
    if(winner.length > 0){
-   alert("Winner!");
+   alert("You win!")
+   window.location.href='winner.html';
    clearInterval(interval);
 } 
 
 }
 
+// Losing Conditions
 function Loser(){
     var currentPos = $('#player').position().top;
     var enemycollision = $('#player').collision('#enemy1')
@@ -60,20 +53,25 @@ function Loser(){
     var enemycollision3 = $('#player').collision('#enemy3')
     var enemycollision4 = $('#player').collision('#enemy4')
     if(currentPos > 800){
-        alert("Loser!");
-        clearInterval(interval2);
+        alert("You lose!");
+        //location.reload();
+        window.location.href='gameover.html';
     } else if(enemycollision.length > 0){
-        alert("Loser!");
-        window.location.reload();
+        alert("You lose!");
+        //location.reload();
+        window.location.href='gameover.html';
     } else if(enemycollision2.length > 0){
-        alert("Loser!");
-        window.location.reload();
+        alert("You lose!");
+        //location.reload();
+        window.location.href='gameover.html';
     } else if(enemycollision3.length > 0){
-        alert("Loser!");
-        window.location.reload();
+        alert("You lose!");
+        //location.reload();
+        window.location.href='gameover.html';
     } else if(enemycollision4.length > 0){
-        alert("Loser!");
-        window.location.reload();
+        alert("You lose!");
+        //location.reload();
+        window.location.href='gameover.html';
     }
 
 }
@@ -114,10 +112,10 @@ $(document).ready(function(){
 
 enemy_loop = function enemy_loop(){
         $("#enemy1").animate({
-            left: "300px", 
+            left: "-500px", 
 
           }, 1000,function(){
-               $("#enemy1").animate({left: "-300px"},3000)
+               $("#enemy1").animate({left: "500px"},3000)
                  enemy_loop();
         } );    
 }
@@ -126,10 +124,10 @@ enemy_loop();
 
 enemy_loop2 = function enemy_loop2(){
         $("#enemy2").animate({
-            left: "-300px", 
+            left: "-500px", 
 
           }, 1000,function(){
-               $("#enemy2").animate({left: "300px"},3000)
+               $("#enemy2").animate({left: "600px"},3000)
                  enemy_loop2();
         } );    
 }
@@ -138,10 +136,10 @@ enemy_loop2();
 
 enemy_loop3 = function enemy_loop3(){
         $("#enemy3").animate({
-            left: "-470px", 
+            left: "-600px", 
 
           }, 1000,function(){
-               $("#enemy3").animate({left: "470px"},2000)
+               $("#enemy3").animate({left: "600px"},3000)
                  enemy_loop3();
         } );    
 }
@@ -150,10 +148,10 @@ enemy_loop3();
 
 enemy_loop4 = function enemy_loop4(){
         $("#enemy4").animate({
-            left: "300px", 
+            left: "-600px", 
 
           }, 1000,function(){
-               $("#enemy4").animate({left: "-300px"},3000)
+               $("#enemy4").animate({left: "600px"},3000)
                  enemy_loop4();
         } );    
 }
@@ -223,7 +221,7 @@ setInterval(function(){
 }), 1;
 
 
-// Keypad 
+// Keyboard Controls
 
 $(document).keydown(function(e) {
     switch (e.which) {
