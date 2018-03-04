@@ -11,7 +11,7 @@ body {
 	width: 637px;
 	position: relative;
 	top: 13px;
-	left: -1px;
+	left: 5px;
 	display: block;
 	margin: 0px auto;
 
@@ -33,8 +33,8 @@ body {
 	position: absolute;
 	height: 385px;
 	width: 400px;
-	bottom:261px;
-	left:92px;
+	bottom:279px;
+	left:72px;
 }
 
 #startbutton {
@@ -42,8 +42,8 @@ body {
 	position: absolute;
 	height:76px;
 	width:166px;
-	top:550px;
-	left:207px;
+	top:530px;
+	left:188px;
 }
 
 #instructions {
@@ -51,8 +51,8 @@ body {
 	position: absolute;
 	height: 69px;
 	width: 368px;
-	top:650px;
-	left:106px;
+	top:604px;
+	left:83px;
 }
 
 #instructionsdetail {
@@ -61,16 +61,25 @@ body {
 	width:418px;
 	position: absolute;
 	bottom:289px;
-	left:82px;
+	left:67px;
 }
 
 #goback {
 	background-image: url("../images/backtomainmenu.png");
-	height:75px;
-	width:569px;
+	height:62px;
+	width:470px;
 	position: absolute;
 	top:536px;
-	left:8px;
+	left:46px;
+}
+
+#gobackwin {
+	background-image: url("../images/backtomainmenu.png");
+	height:62px;
+	width:470px;
+	position: absolute;
+	top:536px;
+	left:37px;
 }
 
 #gameover {

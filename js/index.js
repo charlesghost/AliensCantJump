@@ -18,7 +18,7 @@ var velocity = 0;
 // Music for the game
 
 $(document).ready(function(){
-    $("#sound").get(0).play();
+  $("#sound").get(0).play();
 });
 
 // Winning/Losing Intervals
@@ -30,133 +30,134 @@ $(document).ready(function(){
 
 var interval2 = null;
 $(document).ready(function(){
-    interval2 = setInterval(Loser, 1000);
+  interval2 = setInterval(Loser, 1000);
 })
 
 // Winning Conditions
 
 function Winner(){
-   var winner = $("#player").collision('#winnercoin');
-   if(winner.length > 0){
+ var winner = $("#player").collision('#winnercoin');
+ if(winner.length > 0){
    alert("You win!")
    window.location.href='winner.html';
    clearInterval(interval);
-} 
+ } 
 
 }
 
 // Losing Conditions
 function Loser(){
-    var currentPos = $('#player').position().top;
-    var enemycollision = $('#player').collision('#enemy1')
-    var enemycollision2 = $('#player').collision('#enemy2')
-    var enemycollision3 = $('#player').collision('#enemy3')
-    var enemycollision4 = $('#player').collision('#enemy4')
-    if(currentPos > 800){
-        alert("You lose!");
-        //location.reload();
-        window.location.href='gameover.html';
-    } else if(enemycollision.length > 0){
-        alert("You lose!");
-        //location.reload();
-        window.location.href='gameover.html';
-    } else if(enemycollision2.length > 0){
-        alert("You lose!");
-        //location.reload();
-        window.location.href='gameover.html';
-    } else if(enemycollision3.length > 0){
-        alert("You lose!");
-        //location.reload();
-        window.location.href='gameover.html';
-    } else if(enemycollision4.length > 0){
-        alert("You lose!");
-        //location.reload();
-        window.location.href='gameover.html';
-    }
+  var currentPos = $('#player').position().top;
+  var enemycollision = $('#player').collision('#enemy1');
+  var enemycollision2 = $('#player').collision('#enemy2');
+  var enemycollision3 = $('#player').collision('#enemy3');
+  var enemycollision4 = $('#player').collision('#enemy4');
 
-}
+  if(currentPos > 800){
+    alert("You lose!");
+        
+        window.location.href='gameover.html';
+      } else if(enemycollision.length > 0){
+        alert("You lose!");
+        
+        window.location.href='gameover.html';
+      } else if(enemycollision2.length > 0){
+        alert("You lose!");
+        
+        window.location.href='gameover.html';
+      } else if(enemycollision3.length > 0){
+        alert("You lose!");
+        
+        window.location.href='gameover.html';
+      } else if(enemycollision4.length > 0){
+        alert("You lose!");
+        
+        window.location.href='gameover.html';
+      }
+
+    }
 
 // Platform/Player Animation
 
 $(document).ready(function(){
 
-animate_loop = function animate_loop(){
-        $("#platform2").animate({
-            bottom: "100px", 
+  animate_loop = function animate_loop(){
+    $("#platform2").animate({
+      bottom: "100px", 
 
-          }, 1000,function(){
-               $("#platform2").animate({bottom: "200px"},2000)
-                 animate_loop();
-        } );    
-}
+    }, 1000,function(){
+     $("#platform2").animate({bottom: "200px"},2000)
+     animate_loop();
+   } );    
+  }
 
-animate_loop();  
+  animate_loop();  
 
-animate_loop2 = function animate_loop2(){
-        $("#platform3").animate({
-            bottom: "200px", 
+  animate_loop2 = function animate_loop2(){
+    $("#platform3").animate({
+      bottom: "200px", 
 
-          }, 1000,function(){
-               $("#platform3").animate({bottom: "100px"},2000)
-                 animate_loop2();
-        } );    
-}
+    }, 1000,function(){
+     $("#platform3").animate({bottom: "100px"},2000)
+     animate_loop2();
+   } );    
+  }
 
-animate_loop2();  
+  animate_loop2();  
 
 });
 
-// Animate Enemies
+// Enemies Animation
 
 $(document).ready(function(){
 
-enemy_loop = function enemy_loop(){
-        $("#enemy1").animate({
-            left: "-500px", 
+  enemy_loop = function enemy_loop(){
+    $("#enemy1").animate({
+      left: "-500px", 
 
-          }, 1000,function(){
-               $("#enemy1").animate({left: "500px"},3000)
-                 enemy_loop();
-        } );    
-}
+    }, 1000,function(){
+     $("#enemy1").animate({left: "500px"},3000)
+     enemy_loop();
+   } );    
+  }
 
-enemy_loop();  
+  enemy_loop();  
 
-enemy_loop2 = function enemy_loop2(){
-        $("#enemy2").animate({
-            left: "-500px", 
+  enemy_loop2 = function enemy_loop2(){
+    $("#enemy2").animate({
+      left: "-500px", 
 
-          }, 1000,function(){
-               $("#enemy2").animate({left: "600px"},3000)
-                 enemy_loop2();
-        } );    
-}
+    }, 1000,function(){
+     $("#enemy2").animate({left: "600px"},3000)
+     enemy_loop2();
+   } );    
+  }
 
-enemy_loop2();  
+  enemy_loop2();  
 
-enemy_loop3 = function enemy_loop3(){
-        $("#enemy3").animate({
-            left: "-600px", 
+  enemy_loop3 = function enemy_loop3(){
+    $("#enemy3").animate({
+      left: "-600px", 
 
-          }, 1000,function(){
-               $("#enemy3").animate({left: "600px"},3000)
-                 enemy_loop3();
-        } );    
-}
+    }, 1000,function(){
+     $("#enemy3").animate({left: "600px"},3000)
+     enemy_loop3();
+   } );    
+  }
 
-enemy_loop3();  
+  enemy_loop3();  
 
-enemy_loop4 = function enemy_loop4(){
-        $("#enemy4").animate({
-            left: "-600px", 
+  enemy_loop4 = function enemy_loop4(){
+    $("#enemy4").animate({
+      left: "-600px", 
 
-          }, 1000,function(){
-               $("#enemy4").animate({left: "600px"},3000)
-                 enemy_loop4();
-        } );    
-}
+    }, 1000,function(){
+     $("#enemy4").animate({left: "600px"},3000)
+     enemy_loop4();
+   } );    
+  }
 
-enemy_loop4();  
+  enemy_loop4();  
 
 });
 
@@ -176,47 +177,49 @@ setInterval(function(){
   var collision10 = $("#player").collision("#platform10");
   var collision11 = $("#player").collision("#platform11");
   var collision12 = $("#player").collision("#platform12");
+
   // get the player div's current top position and store in variable
   var currentPos = $('#player').position().top;
 
+  // target the player's top position and give it a value of it's current top position + 10px
   if(collision.length > 0){
     currentPos -= 10;
-    // target the player's top position and give it a value of it's current top position + 10p
+  
     $("#player").css('top', currentPos + "px");    
-} else if (collision2.length > 0){
+  } else if (collision2.length > 0){
     currentPos -= 10;
     $("#player").css('top', currentPos + "px");
-} else if (collision3.length > 0){
+  } else if (collision3.length > 0){
     currentPos -= 10;
     $("#player").css('top', currentPos + "px");
-} else if (collision4.length > 0){
+  } else if (collision4.length > 0){
     currentPos -= 10;
     $("#player").css('top', currentPos + "px");
-} else if (collision5.length > 0){
+  } else if (collision5.length > 0){
     currentPos -= 10;
     $("#player").css('top', currentPos + "px");
-} else if (collision6.length > 0){
+  } else if (collision6.length > 0){
     currentPos -= 10;
     $("#player").css('top', currentPos + "px");
-} else if (collision7.length > 0){
+  } else if (collision7.length > 0){
     currentPos -= 10;
     $("#player").css('top', currentPos + "px");
-} else if (collision8.length > 0){
+  } else if (collision8.length > 0){
     currentPos -= 10;
     $("#player").css('top', currentPos + "px");
-} else if (collision9.length > 0){
+  } else if (collision9.length > 0){
     currentPos -= 10;
     $("#player").css('top', currentPos + "px");
-} else if (collision10.length > 0){
+  } else if (collision10.length > 0){
     currentPos -= 10;
     $("#player").css('top', currentPos + "px");
-} else if (collision11.length > 0){
+  } else if (collision11.length > 0){
     currentPos -= 10;
     $("#player").css('top', currentPos + "px");
-} else if (collision12.length > 0){
+  } else if (collision12.length > 0){
     currentPos -= 10;
     $("#player").css('top', currentPos + "px");
-}
+  }
 
 }), 1;
 
@@ -224,44 +227,39 @@ setInterval(function(){
 // Keyboard Controls
 
 $(document).keydown(function(e) {
-    switch (e.which) {
-        case 65:
-        $('#player').stop().animate({
-            left: '-=30'
-        }); //left arrow key
-        break;
-        case 87:
-        $('#player').stop().animate({
-            top: '-=30'
-        }); //up arrow key
-        break;
-        case 68:
-        $('#player').stop().animate({
-            left: '+=30'
-        }); //right arrow key
-        break;
-        case 83:
-        $('#player').stop().animate({
-            top: '+=30'
-        }); //bottom arrow key
-        break;
-    }
+  switch (e.which) {
+    case 65:
+    $('#player').stop().animate({
+      left: '-=30'
+        }); //"A" Key
+    break;
+    case 87:
+    $('#player').stop().animate({
+      top: '-=30'
+        }); //"W" Key
+    break;
+    case 68:
+    $('#player').stop().animate({
+      left: '+=30'
+        }); //"D" Key
+    break;
+  }
 })
 
 // Player Gravity
 
 function update() {
-    if (velocity === 0 && $("#player").position().top === maxheight) {
-    } else if (velocity > 0 && $("#player").position().top >= maxheight) {
-        $("#player").css("bottom", maxheight + "px");
-        velocity = 0;
-    } else {
-        velocity += gravity;
-        var newPos = $("#player").position().top + velocity + "px";
-        $("#player").css("top", newPos);
-        velocity = 1;
-        
-    }
+  if (velocity === 0 && $("#player").position().top === maxheight) {
+  } else if (velocity > 0 && $("#player").position().top >= maxheight) {
+    $("#player").css("bottom", maxheight + "px");
+    velocity = 0;
+  } else {
+    velocity += gravity;
+    var newPos = $("#player").position().top + velocity + "px";
+    $("#player").css("top", newPos);
+    velocity = 1;
+
+  }
 };
 
 
