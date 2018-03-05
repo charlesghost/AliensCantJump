@@ -56,6 +56,6 @@ Due to the fact that the collision feature took most of my time, i have limited 
 
 ![Screenshot 1](/MarkdownImages/screenshot1.png)
 
-![Screenshot 2](/AliensCantJump/MarkdownImages/screenshot2.png)
+![Screenshot 2](/MarkdownImages/screenshot2.png)
 
-![Screenshot 3](/AliensCantJump/MarkdownImages/screenshot3.png)
+![Screenshot 3](/MarkdownImages/screenshot3.png)
