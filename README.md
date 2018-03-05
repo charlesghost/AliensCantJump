@@ -1,6 +1,6 @@
 # Sparta Core Project 1
 ## "Aliens Can't Jump!"
-![Game Logo](/AliensCantJump/images/alienscantjumplogo.png)
+![Game Logo](/images/alienscantjumplogo.png)
 
 ## Software/Game
 A JavaScript / Jquery game built using HTML with added bootstrap, and CSS.
@@ -54,7 +54,7 @@ Due to the fact that the collision feature took most of my time, i have limited 
 
 ## Finished game
 
-![Screenshot 1](/AliensCantJump/MarkdownImages/screenshot1.png)
+![Screenshot 1](/MarkdownImages/screenshot1.png)
 
 ![Screenshot 2](/AliensCantJump/MarkdownImages/screenshot2.png)
 
