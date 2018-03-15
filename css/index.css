@@ -1,0 +1,294 @@
+body {
+	background-image: url("../images/retroarcade.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+#title {
+	background-image: url("../images/alienscantjumplogo.png");
+	height: 132px;
+	width: 637px;
+	position: relative;
+	top: 13px;
+	left: 5px;
+	display: block;
+	margin: 0px auto;
+
+}
+
+#wrapper {
+	height: 800px;
+	width: 550px;
+	position: relative;
+	margin: 20px auto;
+	overflow: hidden;
+	border: 1px solid black;
+	background-image: url("../images/5014.png");
+
+}
+
+#splash {
+	background-image: url("../images/splash.png");
+	position: absolute;
+	height: 385px;
+	width: 400px;
+	bottom:279px;
+	left:72px;
+}
+
+#startbutton {
+	background-image: url("../images/start.png");
+	position: absolute;
+	height:76px;
+	width:166px;
+	top:530px;
+	left:188px;
+}
+
+#instructions {
+	background-image: url("../images/instructionsnew.png");
+	position: absolute;
+	height: 69px;
+	width: 368px;
+	top:604px;
+	left:83px;
+}
+
+#instructionsdetail {
+	background-image: url("../images/instruction3.png");
+	height:305px;
+	width:418px;
+	position: absolute;
+	bottom:289px;
+	left:67px;
+}
+
+#goback {
+	background-image: url("../images/backtomainmenu.png");
+	height:62px;
+	width:470px;
+	position: absolute;
+	top:536px;
+	left:46px;
+}
+
+#gobackwin {
+	background-image: url("../images/backtomainmenu.png");
+	height:62px;
+	width:470px;
+	position: absolute;
+	top:536px;
+	left:37px;
+}
+
+#gameover {
+	background-image:url("../images/gameover.png");
+	position:absolute;
+	height:59px;
+	width:456px;
+	bottom:400px;
+	left:50px;
+}
+
+#yes {
+	background-image:url("../images/Yes.png");
+	position:absolute;
+	height:70px;
+	width:103px;
+	bottom: 298px;
+	left: 140px;
+}
+#no {
+	background-image:url("../images/No.png");
+	position:absolute;
+	height:68px;
+	width:77px;
+	bottom: 301px;
+	left: 330px;
+}
+
+#youwin {
+	background-image:url("../images/youwin.png");
+	position:absolute;
+	height:73px;
+	width:265px;
+	bottom: 400px;
+	left: 154px;
+}
+
+#playagain {
+	background-image:url("../images/playagain.png");
+	position:absolute;
+	height:78px;
+	width:321px;
+	bottom: 272px;
+	left: 119px;
+}
+
+#player {
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	background-image: url("../images/spacealien.png");
+	bottom:29px;
+	left:227px;
+}
+
+#platform1 {
+	height: 15px;
+	width:100px;
+	position: absolute;
+	bottom:5px;
+	left:227px;
+	background-image: url("../images/steel.jpeg");
+}
+
+#platform2 {
+	height: 15px;
+	width:100px;
+	position: absolute;
+	bottom: 111px;
+	left: 383px;
+	background-image: url("../images/steel.jpeg");
+}
+
+#platform3 {
+	height: 15px;
+	width:100px;
+	position: absolute;
+	bottom: 144px;
+	left: 94px;
+	background-image: url("../images/steel.jpeg");
+}
+
+#platform4 {
+	height: 15px;
+	width:100px;
+	position: absolute;
+	bottom:363px;
+	left:444px;
+	background-image: url("../images/steel.jpeg");
+}
+
+#platform5 {
+	height: 15px;
+	width:100px;
+	position: absolute;
+	bottom:565px;
+	left:401px;
+	background-image: url("../images/steel.jpeg");
+}
+
+#platform6 {
+	height: 15px;
+	width:100px;
+	position: absolute;
+	bottom:440px;
+	left:315px;
+	background-image: url("../images/steel.jpeg");
+}
+
+#platform7 {
+	height: 15px;
+	width:100px;
+	position: absolute;
+	background-image: url("../images/steel.jpeg");
+	bottom:288px;
+	left:220px;
+}
+
+#platform8 {
+	height: 15px;
+	width:100px;
+	position: absolute;
+	background-image: url("../images/steel.jpeg");
+	bottom: 351px;
+	left:22px;
+}
+
+#platform9 {
+	height: 15px;
+	width:100px;
+	position: absolute;
+	background-image: url("../images/steel.jpeg");
+	bottom:421px;
+	left:148px;
+}
+
+#platform10 {
+	height: 15px;
+	width:100px;
+	position: absolute;
+	background-image: url("../images/steel.jpeg");
+	bottom: 502px;
+	left:19px;
+}
+
+#platform11 {
+	height: 15px;
+	width:100px;
+	position: absolute;
+	background-image: url("../images/steel.jpeg");
+	bottom:614px;
+	left:268px;
+}
+
+#platform12 {
+	height: 15px;
+	width:100px;
+	position: absolute;
+	background-image: url("../images/steel.jpeg");
+	bottom:592px;
+	left:43px;
+}
+#winnercoin {
+	height: 100px;
+	width: 100px;
+	background-image: url("../images/winnerwinner.png");
+	position: absolute;
+	left: 227px;
+}
+
+#enemy1 {
+	height:100px;
+	width:100px;
+	background-image: url("../images/monster1.png");
+	position: absolute;
+	bottom: 150px;
+	left: 548px;
+
+}
+
+#enemy2 {
+	height:100px;
+	width:100px;
+	background-image: url("../images/monster2.png");
+	position: absolute;
+	bottom: 492px;
+	left: 541px;
+	
+
+}
+
+#enemy3 {
+	height:100px;
+	width:100px;
+	background-image: url("../images/monster3.png");
+	position: absolute;
+	bottom: 323px;
+	left: -50px;
+	
+
+}
+
+#enemy4 {
+	height:100px;
+	width:100px;
+	background-image: url("../images/flyingdisk.png");
+	position: absolute;
+	bottom: 600px;
+	left: -45px;
+	
+
+}
