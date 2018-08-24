@@ -1,5 +1,4 @@
-# Sparta Core Project 1
-## "Aliens Can't Jump!"
+# "Aliens Can't Jump!"
 ![Game Logo](/images/alienscantjumplogo.png)
 
 ## Software/Game
